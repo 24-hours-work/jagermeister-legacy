@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Jägermeister — тёмная легенда из Вольфенбюттеля</title>
+    <!-- Google Fonts для чистого, современного стиля -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #050505;
+            font-family: 'Inter', sans-serif;
+            color: #e5e5e5;
+            line-height: 1.5;
+            scroll-behavior: smooth;
+        }
+
+        /* Темный, премиальный фон с текстурой */
+        .site-wrapper {
+            background: radial-gradient(circle at 10% 20%, rgba(10, 25, 15, 0.4), #030303 90%);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+        }
+
+        /* Типографика */
+        h1, h2, h3 {
+            font-weight: 700;
+            letter-spacing: -0.02em;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            line-height: 1.2;
+            background: linear-gradient(135deg, #FFFFFF 0%, #A3C9A5 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            margin-bottom: 1rem;
+        }
+
+        h2 {
+            font-size: 2.2rem;
+            margin: 2rem 0 1rem 0;
+            border-left: 5px solid #2c5e2e;
+            padding-left: 1.2rem;
+        }
+
+        h3 {
+            font-size: 1.4rem;
+            margin: 1.5rem 0 0.75rem 0;
+            color: #bcddbb;
+        }
+
+        .lead {
+            font-size: 1.2rem;
+            color: #b0b0b0;
+            max-width: 800px;
+            margin-bottom: 2rem;
+        }
+
+        /* Герой-секция */
+        .hero {
+            min-height: 75vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: linear-gradient(145deg, #0a1f0e 0%, #020202 100%);
+            border-bottom: 1px solid #2a3a2a;
+        }
+
+        .hero-content {
+            max-width: 880px;
+        }
+
+        .hero-badge {
+            background: rgba(44, 94, 46, 0.2);
+            backdrop-filter: blur(4px);
+            display: inline-block;
+            padding: 0.3rem 1rem;
+            border-radius: 40px;
+            font-size: 0.8rem;
+            letter-spacing: 1px;
+            margin-bottom: 1.5rem;
+            border: 1px solid #3c6e3e;
+            color: #c0e0c0;
+        }
+
+        /* Карточки и сетка */
+        .grid-2col, .grid-3col {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .card {
+            background: rgba(20, 20, 20, 0.65);
+            backdrop-filter: blur(2px);
+            border-radius: 28px;
+            padding: 1.8rem;
+            border: 1px solid #2c3a2c;
+            transition: all 0.25s ease;
+        }
+
+        .card:hover {
+            border-color: #4f7a4f;
+            background: rgba(28, 32, 24, 0.8);
+            transform: translateY(-4px);
+        }
+
+        .icon-accent {
+            font-size: 2.4rem;
+            margin-bottom: 1rem;
+            display: inline-block;
+        }
+
+        /* Стили для ритуала (нумерация) */
+        .ritual-step {
+            display: flex;
+            gap: 1rem;
+            align-items: flex-start;
+            margin-bottom: 1.8rem;
+        }
+
+        .step-number {
+            background: #2c5e2e;
+            width: 44px;
+            height: 44px;
+            border-radius: 60px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            font-size: 1.5rem;
+            flex-shrink: 0;
+        }
+
+        /* Кнопка-цитата */
+        .epigraph {
+            font-style: italic;
+            border-left: 3px solid #2c5e2e;
+            padding-left: 1.5rem;
+            margin: 2rem 0;
+            font-size: 1.1rem;
+            color: #c6d9c3;
+        }
+
+        /* Футер — только декоративная линия, без текста */
+        .footer-note {
+            text-align: center;
+            padding: 2rem 1rem;
+            border-top: 1px solid #1f2a1f;
+            margin-top: 2rem;
+            font-size: 0.8rem;
+            color: #4a5548;
+        }
+
+        @media (max-width: 760px) {
+            h1 { font-size: 2.4rem; }
+            h2 { font-size: 1.8rem; }
+            .container { padding: 1.2rem; }
+        }
+    </style>
+</head>
+<body>
+<div class="site-wrapper">
+    <!-- Герой / титул -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-badge">⚘ выдержанная легенда</div>
+            <h1>Jägermeister:<br>тёмная легенда из Вольфенбюттеля</h1>
+            <p class="lead">История бренда, спрятанная в травяном настое и поэтических строчках — премиальный рассказ о мастере-аптекаре, священных символах и культуре подачи, которая превратила ликёр в культ.</p>
+        </div>
+    </section>
+
+    <main class="container">
+        <!-- 1. Происхождение -->
+        <h2>Происхождение — Курт Маст и фармацевтическая традиция</h2>
+        <p>В сердце Вольфенбюттеля, между аптекой и лесной тропой, родилась идея ликёра, который должен был лечить и поражать воображение. Курт Маст, аптекарь и мастер дистилляции, собрал рецептуру, которая пересекается с традициями травничества — точный, почти алхимический ритуал создания выдержанного настойного напитка.</p>
+        <p>Это не просто рецепт — это семейная рукопись, где каждая травинка подобрана для баланса горечи, сладости и аромата. Дух ремесла, строгость дозировки и внимание к деталям дали начало бренду, который стал иконой ночной культуры.</p>
+
+        <div class="grid-3col">
+            <div class="card"><div class="icon-accent">🌿</div><h3>Травничество</h3><p>Лечебные знания аптекарей — основа рецепта.</p></div>
+            <div class="card"><div class="icon-accent">⚗️</div><h3>Дистилляция</h3><p>Точный нагрев и выдержка для глубины вкуса.</p></div>
+            <div class="card"><div class="icon-accent">📜</div><h3>Семейная традиция</h3><p>Рецепт хранился и передавался, как наследие.</p></div>
+        </div>
+
+        <!-- 2. 56 трав -->
+        <h2>Рецепт: 56 трав и алхимия вкуса</h2>
+        <p>Сердце Jägermeister — сложный настой из 56 ингредиентов: коренья, коры, цветов, семян и пряностей. Формула хранится с фанатичной точностью; каждая партия смешивается и мацерируется, пока аромат не достигнет нужной плотности и гармонии.</p>
+        <p>Это не просто горечь и сладость — это многослойный профиль, где цитрус освежает, специи дают тепло, а травы оставляют терпкий, почти лекарственный шлейф. Такой баланс достигается через терпеливую выдержку и точное соотношение ингредиентов.</p>
+
+        <!-- 3. Символ и легенда -->
+        <h2>Легенда и символ — Святой Губерт и олень</h2>
+        <p>Логотип Jägermeister — крест, рогатый олень и свет, что сошёл с небес — отсылает к легенде о Святом Губерте: охотник, увидевший в лесу сияющий крестом олень, обратился к вере. Символизм смешивает мистику, искупление и силу природы — идеально подходящую метафору для травяного эликсира.</p>
+        <p>Этот образ стал не только визуальной меткой: он формирует эмоциональную связь — напиток как ритуал, бутылка как трофей, а глоток — обещание тёмной тайны, открывающейся только избранным.</p>
+
+        <div class="grid-2col">
+            <div class="card"><h3>🦌 Олень</h3><p>Символ силы, природы и метаморфозы — центральный элемент айдентики.</p></div>
+            <div class="card"><h3>✝️ Крест</h3><p>Знак познания и искупления, который придаёт логотипу сакральный подтекст.</p></div>
+        </div>
+
+        <!-- 4. Бутылка -->
+        <h2>Зелёная бутылка — краштест стиля</h2>
+        <p>Бутылка Jägermeister — тёмно-зелёное стекло, строгая форма и узнаваемая этикетка. Это не просто тара: это символ — прочный, контрастный и готовый к сценическому использованию. Дизайн сочетает утилитарность и эстетическую дерзость: матовое стекло, тяжёлая пробка и плотная бумага этикетки создают впечатление премиальности и мистики одновременно.</p>
+
+        <div class="epigraph">
+            «Стихи на этикетке усиливают ощущение традиции и тайны — это важный элемент премиального сторителлинга»
+        </div>
+
+        <!-- 5. Футбольная революция -->
+        <h2>Футбольная революция 1973 — Брауншвейг и массовая культура</h2>
+        <p>В 1973 году Jägermeister нашёл новую арену — спорт. Партнёрство с футбольным клубом Брауншвейг стало прорывом: бренд, ранее связанный с интерьером баров и аптеками, вышел на стадион и в массы. Яркие эмблемы на формах, экспрессивное использование зелёного цвета и дерзкие PR‑ходы сделали напиток символом субкультуры — от фанатов до рок‑музыкантов.</p>
+
+        <h2>Как подавать — ритуал при –18°C</h2>
+        <p>Традиция подачи Jägermeister изменила сам акт употребления: бутылку охлаждают до –18°C, подают в маленьких рюмках, быстро и коллективно. Такой способ подчёркивает чистоту вкуса, сглаживает травяные ноты и превращает глоток в ритуал — быстрый, ледяной и электризующий.</p>
+
+        <div class="grid-3col" style="margin-top: 1rem;">
+            <div class="ritual-step"><span class="step-number">01</span><div><strong>Охлаждение</strong><br>Держать бутылку в морозильнике при –18°C не менее 4 часов.</div></div>
+            <div class="ritual-step"><span class="step-number">02</span><div><strong>Посуда</strong><br>Маленькие рюмки или стопки, слегка охлаждённые.</div></div>
+            <div class="ritual-step"><span class="step-number">03</span><div><strong>Сервер</strong><br>Подача быстрыми глотками, коллективный тост для усиления эффекта.</div></div>
+        </div>
+
+        <h2>Ребрендинг: современная и дерзкая интерпретация классики</h2>
+        <p>Современный ребрендинг сохраняет корни — логотип, зелёную бутылку и символику Святого Губерта — но трансформирует их язык: более чистые линии, смелые контрасты и премиальные материалы. Это манифест — сохранить мистику, но говорить языком XXI века.</p>
+        <div class="grid-3col">
+            <div class="card"><h3>📄 Материалы</h3><p>Плотная бумага, тиснение и частичное лакирование.</p></div>
+            <div class="card"><h3>🔤 Типографика</h3><p>Чистые геометрические шрифты в сочетании с классикой.</p></div>
+            <div class="card"><h3>🎙 Коммуникация</h3><p>Смелые кампании, арт‑коллаборации и клубные события.</p></div>
+        </div>
+
+        <h2>Наследие и современность — ритуал продолжается</h2>
+        <p>Jägermeister остаётся продуктом двойной природы: медицины и развлечения, ритуала и провокации. Его история — от аптечного стола Курта Маста до стадионных трибун и клубных перформансов — показывает, как бренд может хранить свои корни, оставаясь дерзким и актуальным.</p>
+        <p>Для взрослой публики, ценящей премиальный дизайн и глубокие истории, Jägermeister — это не просто напиток. Это объект коллекционирования, предмет обсуждения и элемент вечера, вплетённый в музыкальную и визуальную культуру. Бутылка остаётся приглашением: ощутить холод, прочитать этикетку и стать частью легенды.</p>
+
+        <div class="epigraph" style="text-align: center; border-left: none; border-top: 1px solid #2c5e2e; padding-top: 1.5rem;">
+            Тёмный, премиальный, дерзкий — стиль этого сайта подчёркивает мистическую привлекательность бренда и его культурное наследие.
+        </div>
+    </main>
+    <!-- Футер теперь полностью чистый, без фразы про фан-сайт -->
+    <div class="footer-note"></div>
+</div>
+</body>
+</html>
